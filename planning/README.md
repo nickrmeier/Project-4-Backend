@@ -16,17 +16,17 @@ Lizt is an application for making, sharing, and organizing lists of anything. Us
 # Lizt - Models
 ```
 
-class List(models.Model):
+class Lizt(models.Model):
     title = models.CharField(max_length=100)
     def __str__(self):
         return self.title
 
 class Item(models.Model):
-    list = models.ForeignKey(List, on_delete=models.CASCADE, related_name='item')
-    list_item = models.CharField(max_length=100, default='no items')
+    lizt = models.ForeignKey(List, on_delete=models.CASCADE, related_name='item')
+    lizt_item = models.CharField(max_length=100, default='no items')
     quantity = models.CharField(max_length=10, default='0')
     def __str__(self):
-        return self.list_item
+        return self.lizt_item
 
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(max_length=255, unique=True)
