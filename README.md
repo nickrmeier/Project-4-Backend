@@ -48,3 +48,16 @@ class User(AbstractBaseUser, PermissionsMixin):
 ![alt text](https://github.com/nickrmeier/Project-4-Backend/blob/master/images/wireframe-2.png?raw=true)
 
 ![alt text](https://github.com/nickrmeier/Project-4-Backend/blob/master/images/wireframe-3.png?raw=true)
+
+
+
+# Lizt - MPV
+
+- Authentification
+- Full CRUD
+- Texting via Twilio (https://www.twilio.com/sms)
+
+# Lizt - Gold Version
+
+- Search function by keywords
+- Autoformatting of lists items
