@@ -40,3 +40,11 @@ class User(AbstractBaseUser, PermissionsMixin):
         return self.email
         
 ```
+
+# Lizt - Wireframes
+
+![alt text](https://github.com/nickrmeier/Project-4-Backend/blob/master/images/wireframe-1.png?raw=true)
+
+![alt text](https://github.com/nickrmeier/Project-4-Backend/blob/master/images/wireframe-2.png?raw=true)
+
+![alt text](https://github.com/nickrmeier/Project-4-Backend/blob/master/images/wireframe-3.png?raw=true)
