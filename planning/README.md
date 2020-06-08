@@ -13,6 +13,10 @@ Lizt is an application for making, sharing, and organizing lists of anything. Us
 2. As a user I want to customize my lists, and view/save other users lists for new ideas. I want to be able to search for lists around a certain subject for new ideas. I want to look back on my old lists for ideas, and to edit.
 
 
+# Lizt - Routes
+
+![alt text](https://github.com/nickrmeier/Project-4-Backend/blob/master/images/IMG_2532.jpg?raw=true)
+
 # Lizt - Models
 ```
 
