@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Lizt, Item
+admin.site.register(Lizt)
+admin.site.register(Item)

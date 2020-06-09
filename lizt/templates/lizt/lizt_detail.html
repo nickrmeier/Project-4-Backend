@@ -1,0 +1,15 @@
+<h2>{{ lizt.title }}
+    <a href="{% url 'item_create' %}">add items</a>
+</h2>
+
+<ul>
+    {% for item in lizt.items.all %}
+    <li>
+        <a>{{ item.lizt_item }} - {{ item.quantity }}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'lizt_delete' pk=lizt.pk %}">Delete Lizt</a>
+
+<a href="{% url 'lizt_list' %}">Home</a>
