@@ -1,14 +1,10 @@
 from django.urls import path
 from . import views
+from rest_framework.routers import DefaultRouter
 
 urlpatterns = [
-    path('lizts', views.lizt_list, name='lizt_list'),
-    path('lizts/<int:pk>', views.lizt_detail, name='lizt_detail'),
-    path('lizts/new', views.lizt_create, name='lizt_create'),
-    path('lizts/<int:pk>/delete', views.lizt_delete, name='lizt_delete'),
-
-    path('items', views.item_list, name='item_list'),
-    path('items/new', views.item_create, name='item_create'),
-    path('items/<int:pk>', views.item_detail, name='item_detail'),
-
+    path('lizts/', views.LiztList.as_view(), name='lizt_list'),
+    path('lizts/<int:pk>', views.LiztDetail.as_view(), name='lizt_detail'),
+    path('items/', views.ItemList.as_view(), name="item_list"),
+    path('Item/<int:pk>', views.ItemDetail.as_view(), name="item_detail")
 ]

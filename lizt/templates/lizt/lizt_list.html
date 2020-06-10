@@ -1,9 +1,0 @@
-<h2>Lizts<a href="{% url 'lizt_create' %}"> +</a></h2>
-
-<ul>
-    {% for lizt in lizts %}
-    <li>
-        <a href="{% url 'lizt_detail' pk=lizt.pk %}">{{ lizt.title }}</a>
-    </li>
-    {% endfor %}
-</ul>

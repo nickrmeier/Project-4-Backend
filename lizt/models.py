@@ -10,4 +10,4 @@ class Item(models.Model):
     lizt_item = models.CharField(max_length=100, default='no items')
     quantity = models.CharField(max_length=10, default='0')
     def __str__(self):
-        return self.lizt_item
+        return 'name='+self.lizt_item+', quantity='+self.quantity
