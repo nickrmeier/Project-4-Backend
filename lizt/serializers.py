@@ -8,7 +8,7 @@ class LiztSerializer(serializers.ModelSerializer):
     )
     class Meta: 
         model = Lizt
-        fields = ('title', 'items',)
+        fields = ('id', 'title', 'items',)
 
 class ItemSerializer(serializers.HyperlinkedModelSerializer):
     lizt = serializers.HyperlinkedRelatedField(
@@ -17,4 +17,4 @@ class ItemSerializer(serializers.HyperlinkedModelSerializer):
     )
     class Meta: 
         model = Item
-        fields = ('lizt', 'lizt_item', 'quantity',)
+        fields = ('id', 'lizt', 'lizt_item', 'quantity',)
